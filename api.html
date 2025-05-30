@@ -48,7 +48,22 @@
             </div>
         </nav>
         <!--AQUI COMEÇA O CONTEÚDO-->
-
+        <h1 class="apih1">Informações do Pokémon</h1>
+        <div class="inputapi">
+            <input type="text" id="pokemonNameInput" placeholder="Digite o nome ou ID do Pokémon">
+            <button id="fetchPokemonButton">Buscar Pokémon</button>
+        </div>
+        <div class="container-center">
+            <div id="pokemonResult" class="pokemon-info" style="display:none;">
+                <h2 id="pokemonName"></h2>
+                <img id="pokemonImage" src="" alt="Imagem do Pokémon">
+                <p><strong>ID:</strong> <span id="pokemonId"></span></p>
+                <p><strong>Altura:</strong> <span id="pokemonHeight"></span></p>
+                <p><strong>Peso:</strong> <span id="pokemonWeight"></span></p>
+                <p><strong>Tipos:</strong> <span id="pokemonTypes"></span></p>
+            </div>
+        </div>
+        <div id="errorMessage" class="error"></div>
 
         <!--Footer-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
@@ -246,6 +261,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <script src="js/calculos.js"></script>
+    <script src="js/pokeapi.js"></script>
 </body>
 </html>

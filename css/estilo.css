@@ -37,15 +37,130 @@ section .section-title {
     transform: scale(1.1);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-
-
-.footer-widget p {
-    margin-bottom: 27px;
-}
 p {
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     line-height: 28px;
+}
+
+.inputapi {
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    gap: 10px; /* Espaço entre o input e o botão */
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 450px; /* Limita a largura da área de busca */
+}
+
+#pokemonNameInput {
+    flex-grow: 1; /* Faz o input ocupar o espaço disponível */
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
+    transition: border-color 0.2s ease-in-out;
+}
+
+#pokemonNameInput:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+#fetchPokemonButton {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#fetchPokemonButton:hover {
+    background-color: #0056b3;
+}
+
+.pokemon-info {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 25px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Garante altura suficiente para centralizar */
+    margin: 0; /* Remove margens padrão */
+    background-color: #f8f9fa; /* Cor de fundo para contraste */
+}
+.pokemon-info h2 {
+    color: #343a40;
+    margin-top: 0;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+#pokemonImage {
+    width: 150px; /* Tamanho maior para a imagem */
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: #f8f9fa; /* Fundo sutil para a imagem */
+    border-radius: 50%; /* Imagem redonda */
+    padding: 10px; /* Espaçamento interno se a imagem for transparente */
+    object-fit: contain; /* Garante que a imagem caiba bem */
+    border: 2px solid #eee;
+}
+
+.pokemon-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 8px 0;
+    color: #555;
+}
+
+.pokemon-info p strong {
+    color: #333;
+}
+
+#pokemonTypes {
+    text-transform: capitalize;
+}
+
+.error {
+    color: #dc3545; /* Vermelho para erros */
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+.apih1 {
+    color: #2E2E2E;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.footer-widget p {
+    margin-bottom: 27px;
 }
 
 .dk-footer {
