@@ -13,6 +13,10 @@ $("#calcular").click(function () {
         alert('Por favor, insira números válidos');
         return;
     }
+    if(salariobruto < 0) {
+        alert('Salário bruto inválido. Por favor, insira um valor válido.');
+        return;
+    }
 
     var bonus = 200;
 
